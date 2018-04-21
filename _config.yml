@@ -16,9 +16,9 @@
 title: Allen WANG
 email: wanghmjlu@163.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal site for Allen WANG, who believe in less ie more.
+  Blog of Allen WANG
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://allenwhm.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: allenwhm
 github_username:  allenwhm
 
