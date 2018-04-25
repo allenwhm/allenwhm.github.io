@@ -1,268 +1,269 @@
-/**
- * Copyright 2016 Google Inc. All rights reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
-*/
+/* ===========================================================
+ * sw.js
+ * ===========================================================
+ * Copyright 2016 @huxpro
+ * Licensed under Apache 2.0
+ * service worker scripting
+ * ========================================================== */
 
-// DO NOT EDIT THIS GENERATED OUTPUT DIRECTLY!
-// This file should be overwritten as part of your build process.
-// If you need to extend the behavior of the generated service worker, the best approach is to write
-// additional code and include it using the importScripts option:
-//   https://github.com/GoogleChrome/sw-precache#importscripts-arraystring
-//
-// Alternatively, it's possible to make changes to the underlying template file and then use that as the
-// new base for generating output, via the templateFilePath option:
-//   https://github.com/GoogleChrome/sw-precache#templatefilepath-string
-//
-// If you go that route, make sure that whenever you update your sw-precache dependency, you reconcile any
-// changes made to this original template file with your modified copy.
+// CACHE_NAMESPACE
+// CacheStorage is shared between all sites under same domain.
+// A namespace can prevent potential name conflicts and mis-deletion.
+const CACHE_NAMESPACE = 'main-'
 
-// This generated service worker JavaScript will precache your site's resources.
-// The code needs to be saved in a .js file at the top-level of your site, and registered
-// from your pages in order to be used. See
-// https://github.com/googlechrome/sw-precache/blob/master/demo/app/js/service-worker-registration.js
-// for an example of how you can register this script and handle various service worker events.
-
-/* eslint-env worker, serviceworker */
-/* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
-'use strict';
-
-var precacheConfig = [["/404/index.html","47dcf85ba04023a75cbfb5cee8ddae96"],["/about/index.html","42dead2d66074baca9ef9b640d1f3068"],["/assets/css/main.css","10cbd80166913ef6d89c80151e2aecb7"],["/assets/img/favicon.jpg","ffb9f5c8afdda7fa4f3fd697e5147182"],["/assets/img/icons/android-chrome-192x192.png","4df4c8779d47bcaa69516050281773b9"],["/assets/img/icons/android-chrome-256x256.png","939ec88a61f407945a27d867fca1651d"],["/assets/img/icons/apple-touch-icon.png","366666899d15cf8f6811cc73ee0d63de"],["/assets/img/icons/favicon-16x16.png","f625044491b20a5df78571ba266cbcf6"],["/assets/img/icons/favicon-32x32.png","67502381e45848a4ab76123364675ffe"],["/assets/img/icons/icon-github.svg","4e06335104a29f91e08d4ef420da7679"],["/assets/img/icons/icon-instagram.svg","1e1119e2628235ee4c8771bff15eb2ca"],["/assets/img/icons/icon-twitter.svg","30551913d5399d6520e8a74b6f1e23f0"],["/assets/img/icons/mstile-150x150.png","1cea2ceb806d1a018330a51a1d8b73b6"],["/assets/img/icons/safari-pinned-tab.svg","398ef6b25c0f7f3f6e54c112a8facc5f"],["/assets/img/posts/emile-perron-190221.jpg","4705474281b975b7a213b96e71f772e7"],["/assets/img/posts/emile-perron-190221_lg.jpg","aafe35b1dc6d9dc9293c8c2ef4121046"],["/assets/img/posts/emile-perron-190221_md.jpg","03ed35ed656429599daba312f0990a0f"],["/assets/img/posts/emile-perron-190221_placehold.jpg","67f40708f69ab671cee04d624258b85c"],["/assets/img/posts/emile-perron-190221_sm.jpg","4ce4178a62d5a456e90e7bc47bde50f5"],["/assets/img/posts/emile-perron-190221_thumb.jpg","f20085dfe2e36854f8a12f1fd6c50425"],["/assets/img/posts/emile-perron-190221_thumb@2x.jpg","b8fa22c3237de529316037f093b9cb4d"],["/assets/img/posts/emile-perron-190221_xs.jpg","ac32cbd525d72e932499668af5647d03"],["/assets/img/posts/shane-rounce-205187.jpg","bb774d6e05b2b55ffdabe11a8aac7c56"],["/assets/img/posts/shane-rounce-205187_lg.jpg","83cd838024fff9c3faec59fa1da97872"],["/assets/img/posts/shane-rounce-205187_md.jpg","628cf27bf658cf6de9df79ab9bf2cb2d"],["/assets/img/posts/shane-rounce-205187_placehold.jpg","249fc4a09bcfcbd7d5764f14c14ae82e"],["/assets/img/posts/shane-rounce-205187_sm.jpg","a2400a468e10d7d64528ac9c6bc3b6f0"],["/assets/img/posts/shane-rounce-205187_thumb.jpg","c3b2dd0d95a6d3a44d7702f8c06b1e78"],["/assets/img/posts/shane-rounce-205187_thumb@2x.jpg","b0722b63a92c92a44cd92c0201fc92a4"],["/assets/img/posts/shane-rounce-205187_xs.jpg","cd58fd23f3b3c1de2183beb9ed08327b"],["/assets/img/posts/sleek.jpg","a32252a618ffe8ae57c9ce9ab157a01b"],["/assets/img/posts/sleek_lg.jpg","95a1338aa524727f34950f269133e904"],["/assets/img/posts/sleek_md.jpg","4e35ceb2f5fffd3d758fade699b0b85a"],["/assets/img/posts/sleek_placehold.jpg","0f48050cd7776895b98c6ce21597ff39"],["/assets/img/posts/sleek_sm.jpg","f30af3d30b7df905d962e494750f5da0"],["/assets/img/posts/sleek_thumb.jpg","f7b8a94ac9da8e5ea36bb9e459872400"],["/assets/img/posts/sleek_thumb@2x.jpg","e67e2129dc58a100b98a5e027c964dbc"],["/assets/img/posts/sleek_xs.jpg","c8212cace6d446950556a3bf6efe4520"],["/assets/js/bundle.js","86bcd5edb73fa1f79f08f1a799a1ab1f"],["/contact/index.html","e7c79eae1e9fd2d4e7e6584502995383"],["/getting-started/index.html","8816b8187ed1a72d973c0a38fe340a34"],["/index.html","59d575c404af2fb73f2c3ad677394f9c"],["/markdown-cheatsheet/index.html","2406b402ccc3210a2421afb694d02e93"],["/super-long-article/index.html","2cc1bee6d7e2058ad18f89d6b435de65"],["/sw.js","d6c6a2e1c7da02b65ed04bb07c7d3079"],["/welcome-to-jekyll/index.html","94073eba36aa5bcfed07a70669c44f98"]];
-var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
+const CACHE = CACHE_NAMESPACE + 'precache-then-runtime';
+const PRECACHE_LIST = [
+  "./",
+  "./offline.html",
+  "./js/jquery.min.js",
+  "./js/bootstrap.min.js",
+  "./js/hux-blog.min.js",
+  "./js/snackbar.js",
+  // "./img/icon_wechat.png",
+  "./img/avatar-allenwhm.jpg",
+  "./img/home.jpg",
+  "./img/404-bg.jpg",
+  "./css/hux-blog.min.css",
+  "./css/syntax.css",
+  "./css/bootstrap.min.css"
+  // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
+  // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3",
+  // "//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"
+]
+const HOSTNAME_WHITELIST = [
+  self.location.hostname,
+  "huangxuan.me",
+  "yanshuo.io",
+  "cdnjs.cloudflare.com"
+]
+const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']
 
 
-var ignoreUrlParametersMatching = [/^utm_/];
+// The Util Function to hack URLs of intercepted requests
+const getCacheBustingUrl = (req) => {
+  var now = Date.now();
+  url = new URL(req.url)
 
+  // 1. fixed http URL
+  // Just keep syncing with location.protocol
+  // fetch(httpURL) belongs to active mixed content.
+  // And fetch(httpRequest) is not supported yet.
+  url.protocol = self.location.protocol
 
-
-var addDirectoryIndex = function (originalUrl, index) {
-    var url = new URL(originalUrl);
-    if (url.pathname.slice(-1) === '/') {
-      url.pathname += index;
-    }
-    return url.toString();
-  };
-
-var cleanResponse = function (originalResponse) {
-    // If this is not a redirected response, then we don't have to do anything.
-    if (!originalResponse.redirected) {
-      return Promise.resolve(originalResponse);
-    }
-
-    // Firefox 50 and below doesn't support the Response.body stream, so we may
-    // need to read the entire body to memory as a Blob.
-    var bodyPromise = 'body' in originalResponse ?
-      Promise.resolve(originalResponse.body) :
-      originalResponse.blob();
-
-    return bodyPromise.then(function(body) {
-      // new Response() is happy when passed either a stream or a Blob.
-      return new Response(body, {
-        headers: originalResponse.headers,
-        status: originalResponse.status,
-        statusText: originalResponse.statusText
-      });
-    });
-  };
-
-var createCacheKey = function (originalUrl, paramName, paramValue,
-                           dontCacheBustUrlsMatching) {
-    // Create a new URL object to avoid modifying originalUrl.
-    var url = new URL(originalUrl);
-
-    // If dontCacheBustUrlsMatching is not set, or if we don't have a match,
-    // then add in the extra cache-busting URL parameter.
-    if (!dontCacheBustUrlsMatching ||
-        !(url.pathname.match(dontCacheBustUrlsMatching))) {
-      url.search += (url.search ? '&' : '') +
-        encodeURIComponent(paramName) + '=' + encodeURIComponent(paramValue);
-    }
-
-    return url.toString();
-  };
-
-var isPathWhitelisted = function (whitelist, absoluteUrlString) {
-    // If the whitelist is empty, then consider all URLs to be whitelisted.
-    if (whitelist.length === 0) {
-      return true;
-    }
-
-    // Otherwise compare each path regex to the path of the URL passed in.
-    var path = (new URL(absoluteUrlString)).pathname;
-    return whitelist.some(function(whitelistedPathRegex) {
-      return path.match(whitelistedPathRegex);
-    });
-  };
-
-var stripIgnoredUrlParameters = function (originalUrl,
-    ignoreUrlParametersMatching) {
-    var url = new URL(originalUrl);
-    // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
-    url.hash = '';
-
-    url.search = url.search.slice(1) // Exclude initial '?'
-      .split('&') // Split into an array of 'key=value' strings
-      .map(function(kv) {
-        return kv.split('='); // Split each 'key=value' string into a [key, value] array
-      })
-      .filter(function(kv) {
-        return ignoreUrlParametersMatching.every(function(ignoredRegex) {
-          return !ignoredRegex.test(kv[0]); // Return true iff the key doesn't match any of the regexes.
-        });
-      })
-      .map(function(kv) {
-        return kv.join('='); // Join each [key, value] array into a 'key=value' string
-      })
-      .join('&'); // Join the array of 'key=value' strings into a string with '&' in between each
-
-    return url.toString();
-  };
-
-
-var hashParamName = '_sw-precache';
-var urlsToCacheKeys = new Map(
-  precacheConfig.map(function(item) {
-    var relativeUrl = item[0];
-    var hash = item[1];
-    var absoluteUrl = new URL(relativeUrl, self.location);
-    var cacheKey = createCacheKey(absoluteUrl, hashParamName, hash, false);
-    return [absoluteUrl.toString(), cacheKey];
-  })
-);
-
-function setOfCachedUrls(cache) {
-  return cache.keys().then(function(requests) {
-    return requests.map(function(request) {
-      return request.url;
-    });
-  }).then(function(urls) {
-    return new Set(urls);
-  });
+  // 2. add query for caching-busting.
+  // Github Pages served with Cache-Control: max-age=600
+  // max-age on mutable content is error-prone, with SW life of bugs can even extend.
+  // Until cache mode of Fetch API landed, we have to workaround cache-busting with query string.
+  // Cache-Control-Bug: https://bugs.chromium.org/p/chromium/issues/detail?id=453190
+  url.search += (url.search ? '&' : '?') + 'cache-bust=' + now;
+  return url.href
 }
 
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return setOfCachedUrls(cache).then(function(cachedUrls) {
-        return Promise.all(
-          Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
-            // If we don't have a key matching url in the cache already, add it.
-            if (!cachedUrls.has(cacheKey)) {
-              var request = new Request(cacheKey, {credentials: 'same-origin'});
-              return fetch(request).then(function(response) {
-                // Bail out of installation unless we get back a 200 OK for
-                // every request.
-                if (!response.ok) {
-                  throw new Error('Request for ' + cacheKey + ' returned a ' +
-                    'response with status ' + response.status);
-                }
+// The Util Function to detect and polyfill req.mode="navigate"
+// request.mode of 'navigate' is unfortunately not supported in Chrome
+// versions older than 49, so we need to include a less precise fallback,
+// which checks for a GET request with an Accept: text/html header.
+const isNavigationReq = (req) => (req.mode === 'navigate' || (req.method === 'GET' && req.headers.get('accept').includes('text/html')))
 
-                return cleanResponse(response).then(function(responseToCache) {
-                  return cache.put(cacheKey, responseToCache);
-                });
-              });
-            }
-          })
-        );
-      });
-    }).then(function() {
-      
-      // Force the SW to transition from installing -> active state
-      return self.skipWaiting();
-      
+// The Util Function to detect if a req is end with extension
+// Accordin to Fetch API spec <https://fetch.spec.whatwg.org/#concept-request-destination>
+// Any HTML's navigation has consistently mode="navigate" type="" and destination="document"
+// including requesting an img (or any static resources) from URL Bar directly.
+// So It ends up with that regExp is still the king of URL routing ;)
+// P.S. An url.pathname has no '.' can not indicate it ends with extension (e.g. /api/version/1.2/)
+const endWithExtension = (req) => Boolean(new URL(req.url).pathname.match(/\.\w+$/))
+
+// Redirect in SW manually fixed github pages arbitray 404s on things?blah
+// what we want:
+//    repo?blah -> !(gh 404) -> sw 302 -> repo/?blah
+//    .ext?blah -> !(sw 302 -> .ext/?blah -> gh 404) -> .ext?blah
+// If It's a navigation req and it's url.pathname isn't end with '/' or '.ext'
+// it should be a dir/repo request and need to be fixed (a.k.a be redirected)
+// Tracking https://twitter.com/Huxpro/status/798816417097224193
+const shouldRedirect = (req) => (isNavigationReq(req) && new URL(req.url).pathname.substr(-1) !== "/" && !endWithExtension(req))
+
+// The Util Function to get redirect URL
+// `${url}/` would mis-add "/" in the end of query, so we use URL object.
+// P.P.S. Always trust url.pathname instead of the whole url string.
+const getRedirectUrl = (req) => {
+  url = new URL(req.url)
+  url.pathname += "/"
+  return url.href
+}
+
+
+/**
+ *  @Lifecycle Install
+ *  Precache anything static to this version of your app.
+ *  e.g. App Shell, 404, JS/CSS dependencies...
+ *
+ *  waitUntil() : installing ====> installed
+ *  skipWaiting() : waiting(installed) ====> activating
+ */
+self.addEventListener('install', e => {
+  e.waitUntil(
+    caches.open(CACHE).then(cache => {
+      return cache.addAll(PRECACHE_LIST)
+        .then(self.skipWaiting())
+        .catch(err => console.log(err))
     })
-  );
-});
-
-self.addEventListener('activate', function(event) {
-  var setOfExpectedUrls = new Set(urlsToCacheKeys.values());
-
-  event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.keys().then(function(existingRequests) {
-        return Promise.all(
-          existingRequests.map(function(existingRequest) {
-            if (!setOfExpectedUrls.has(existingRequest.url)) {
-              return cache.delete(existingRequest);
-            }
-          })
-        );
-      });
-    }).then(function() {
-      
-      return self.clients.claim();
-      
-    })
-  );
+  )
 });
 
 
-self.addEventListener('fetch', function(event) {
-  if (event.request.method === 'GET') {
-    // Should we call event.respondWith() inside this fetch event handler?
-    // This needs to be determined synchronously, which will give other fetch
-    // handlers a chance to handle the request if need be.
-    var shouldRespond;
+/**
+ *  @Lifecycle Activate
+ *  New one activated when old isnt being used.
+ *
+ *  waitUntil(): activating ====> activated
+ */
+self.addEventListener('activate', event => {
+  // delete old deprecated caches.
+  caches.keys().then(cacheNames => Promise.all(
+    cacheNames
+      .filter(cacheName => DEPRECATED_CACHES.includes(cacheName))
+      .map(cacheName => caches.delete(cacheName))
+  ))
+  console.log('service worker activated.')
+  event.waitUntil(self.clients.claim());
+});
 
-    // First, remove all the ignored parameters and hash fragment, and see if we
-    // have that URL in our cache. If so, great! shouldRespond will be true.
-    var url = stripIgnoredUrlParameters(event.request.url, ignoreUrlParametersMatching);
-    shouldRespond = urlsToCacheKeys.has(url);
 
-    // If shouldRespond is false, check again, this time with 'index.html'
-    // (or whatever the directoryIndex option is set to) at the end.
-    var directoryIndex = 'index.html';
-    if (!shouldRespond && directoryIndex) {
-      url = addDirectoryIndex(url, directoryIndex);
-      shouldRespond = urlsToCacheKeys.has(url);
+var fetchHelper = {
+
+  fetchThenCache: function(request){
+    // Requests with mode "no-cors" can result in Opaque Response,
+    // Requests to Allow-Control-Cross-Origin: * can't include credentials.
+    const init = { mode: "cors", credentials: "omit" } 
+
+    const fetched = fetch(request, init)
+    const fetchedCopy = fetched.then(resp => resp.clone());
+
+    // NOTE: Opaque Responses have no hedaders so [[ok]] make no sense to them
+    //       so Opaque Resp will not be cached in this case.
+    Promise.all([fetchedCopy, caches.open(CACHE)])
+      .then(([response, cache]) => response.ok && cache.put(request, response))
+      .catch(_ => {/* eat any errors */})
+    
+    return fetched;
+  },
+
+  cacheFirst: function(url){
+    return caches.match(url) 
+      .then(resp => resp || this.fetchThenCache(url))
+      .catch(_ => {/* eat any errors */})
+  }
+}
+
+
+/**
+ *  @Functional Fetch
+ *  All network requests are being intercepted here.
+ *
+ *  void respondWith(Promise<Response> r);
+ */
+self.addEventListener('fetch', event => {
+  // logs for debugging
+  //console.log(`fetch ${event.request.url}`)
+  //console.log(` - type: ${event.request.type}; destination: ${event.request.destination}`)
+  //console.log(` - mode: ${event.request.mode}, accept: ${event.request.headers.get('accept')}`)
+
+  // Skip some of cross-origin requests, like those for Google Analytics.
+  if (HOSTNAME_WHITELIST.indexOf(new URL(event.request.url).hostname) > -1) {
+
+    // Redirect in SW manually fixed github pages 404s on repo?blah
+    if (shouldRedirect(event.request)) {
+      event.respondWith(Response.redirect(getRedirectUrl(event.request)))
+      return;
     }
 
-    // If shouldRespond is still false, check to see if this is a navigation
-    // request, and if so, whether the URL matches navigateFallbackWhitelist.
-    var navigateFallback = '';
-    if (!shouldRespond &&
-        navigateFallback &&
-        (event.request.mode === 'navigate') &&
-        isPathWhitelisted([], event.request.url)) {
-      url = new URL(navigateFallback, self.location).toString();
-      shouldRespond = urlsToCacheKeys.has(url);
+    // Cache-only Startgies for ys.static resources
+    if (event.request.url.indexOf('ys.static') > -1){
+      event.respondWith(fetchHelper.cacheFirst(event.request.url))
+      return;
     }
 
-    // If shouldRespond was set to true at any point, then call
-    // event.respondWith(), using the appropriate cache key.
-    if (shouldRespond) {
-      event.respondWith(
-        caches.open(cacheName).then(function(cache) {
-          return cache.match(urlsToCacheKeys.get(url)).then(function(response) {
-            if (response) {
-              return response;
-            }
-            throw Error('The cached response that was expected is missing.');
-          });
-        }).catch(function(e) {
-          // Fall back to just fetch()ing the request if some unexpected error
-          // prevented the cached response from being valid.
-          console.warn('Couldn\'t serve response for "%s" from cache: %O', event.request.url, e);
-          return fetch(event.request);
-        })
-      );
+    // Stale-while-revalidate for possiblily dynamic content
+    // similar to HTTP's stale-while-revalidate: https://www.mnot.net/blog/2007/12/12/stale
+    // Upgrade from Jake's to Surma's: https://gist.github.com/surma/eb441223daaedf880801ad80006389f1
+    const cached = caches.match(event.request);
+    const fetched = fetch(getCacheBustingUrl(event.request), { cache: "no-store" });
+    const fetchedCopy = fetched.then(resp => resp.clone());
+    
+    // Call respondWith() with whatever we get first.
+    // Promise.race() resolves with first one settled (even rejected)
+    // If the fetch fails (e.g disconnected), wait for the cache.
+    // If there’s nothing in cache, wait for the fetch.
+    // If neither yields a response, return offline pages.
+    event.respondWith(
+      Promise.race([fetched.catch(_ => cached), cached])
+        .then(resp => resp || fetched)
+        .catch(_ => caches.match('offline.html'))
+    );
+
+    // Update the cache with the version we fetched (only for ok status)
+    event.waitUntil(
+      Promise.all([fetchedCopy, caches.open(CACHE)])
+        .then(([response, cache]) => response.ok && cache.put(event.request, response))
+        .catch(_ => {/* eat any errors */ })
+    );
+
+    // If one request is a HTML naviagtion, checking update!
+    if (isNavigationReq(event.request)) {
+      // you need "preserve logs" to see this log
+      // cuz it happened before navigating
+      console.log(`fetch ${event.request.url}`)
+      event.waitUntil(revalidateContent(cached, fetchedCopy))
     }
   }
 });
 
 
+/**
+ * Broadcasting all clients with MessageChannel API
+ */
+function sendMessageToAllClients(msg) {
+  self.clients.matchAll().then(clients => {
+    clients.forEach(client => {
+      console.log(client);
+      client.postMessage(msg)
+    })
+  })
+}
 
+/**
+ * Broadcasting all clients async
+ */
+function sendMessageToClientsAsync(msg) {
+  // waiting for new client alive with "async" setTimeout hacking
+  // https://twitter.com/Huxpro/status/799265578443751424
+  // https://jakearchibald.com/2016/service-worker-meeting-notes/#fetch-event-clients
+  setTimeout(() => {
+    sendMessageToAllClients(msg)
+  }, 1000)
+}
 
-
-
-
+/**
+ * if content modified, we can notify clients to refresh
+ * TODO: Gh-pages rebuild everything in each release. should find a workaround (e.g. ETag with cloudflare)
+ * 
+ * @param  {Promise<response>} cachedResp  [description]
+ * @param  {Promise<response>} fetchedResp [description]
+ * @return {Promise}
+ */
+function revalidateContent(cachedResp, fetchedResp) {
+  // revalidate when both promise resolved
+  return Promise.all([cachedResp, fetchedResp])
+    .then(([cached, fetched]) => {
+      const cachedVer = cached.headers.get('last-modified')
+      const fetchedVer = fetched.headers.get('last-modified')
+      console.log(`"${cachedVer}" vs. "${fetchedVer}"`);
+      if (cachedVer !== fetchedVer) {
+        sendMessageToClientsAsync({
+          'command': 'UPDATE_FOUND',
+          'url': fetched.url
+        })
+      }
+    })
+    .catch(err => console.log(err))
+}

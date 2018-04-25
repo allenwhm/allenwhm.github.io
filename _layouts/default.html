@@ -1,47 +1,22 @@
----
-layout: compress
----
-<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+<!DOCTYPE html>
+<html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="site">
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
 
-    {% if site.google_tag_manager %}
+    {% include nav.html %}
 
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-
-    {% endif %}
-
-    {% include header.html %}
-
-    <div class="hero lazyload" data-bg="{{site.url}}/assets/img/posts/sleek_lg.jpg">
-      <div class="hero__wrap">
-        <h1 class="hero__title">Sleek</h1>
-        <p class="hero__meta">Modern Jekyll theme focused on speed performance & SEO best practices</p>
-      </div>
-    </div>
-
-    <main class="site__content">
-      <section class="blog">
-        <div class="container">
-          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
-
-            {% for post in site.posts %}
-              {% include card.html %}
-            {% endfor %}
-
-            <!-- {% include pagination.html %} -->
-          </div>
-        </div>
-      </section>
-    </main>
+    {{ content }}
 
     {% include footer.html %}
 
-  </body>
+
+<!-- Image to hack wechat -->
+<!--<img src="/img/icon_wechat.png" width="0" height="0" />-->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
 
 </html>
