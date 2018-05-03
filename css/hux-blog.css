@@ -139,8 +139,7 @@
   /*font-family: RobotoDraft;*/
   font-size: 14px;
   min-height: 14px;
-  background-color: #323232;
-  background-color: #0085a1;
+  background-color: #7DB9DE;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -191,7 +190,7 @@
   border: none;
   font-size: inherit;
   text-transform: uppercase;
-  color: #ffeb3b;
+  color: #FFFFFB;
   margin: 0px 0px 0px 24px;
   padding: 0px;
   min-width: min-content;
