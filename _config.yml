@@ -38,7 +38,7 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 # Disqus settings
-disqus_username: allenwhm
+# disqus_username: allenwhm
 
 # Netease setttings
 netease_comment: false
