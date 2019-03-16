@@ -54,7 +54,7 @@ ga_domain: allenwang.tech
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "保持好奇与激情<br>以谦卑之心，探索广袤世界"
+sidebar-about-description: "好奇心，探索广阔世界"
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
