@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08621d47-df91-4816-8afc-fdcf7e5b67b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/allen-wang.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/allen-wang.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/allen-wang.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/allen-wang.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/hux-blog.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/hux-blog.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +30,7 @@
           <entry key="js" value="4" />
           <entry key="json" value="5" />
           <entry key="less" value="1" />
+          <entry key="markdown" value="2" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
           <entry key="txt" value="2" />
@@ -46,7 +45,7 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="4" />
           <entry key="Less" value="1" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="3" />
         </counts>
@@ -57,8 +56,9 @@
           <entry key="html" value="119" />
           <entry key="js" value="35" />
           <entry key="json" value="93" />
+          <entry key="markdown" value="2" />
           <entry key="md" value="195" />
-          <entry key="txt" value="598" />
+          <entry key="txt" value="640" />
           <entry key="yml" value="28" />
         </counts>
       </usages-collector>
@@ -68,8 +68,8 @@
           <entry key="HTML" value="119" />
           <entry key="JSON" value="93" />
           <entry key="JavaScript" value="35" />
-          <entry key="Markdown" value="195" />
-          <entry key="PLAIN_TEXT" value="598" />
+          <entry key="Markdown" value="197" />
+          <entry key="PLAIN_TEXT" value="640" />
           <entry key="YAML" value="28" />
         </counts>
       </usages-collector>
@@ -78,19 +78,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/allen-wang.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="331" column="1" lean-forward="true" selection-start-line="331" selection-start-column="1" selection-end-line="331" selection-end-column="1" />
+        <entry file="file://$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/less/hux-blog.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="551" column="18" lean-forward="true" selection-start-line="551" selection-start-column="18" selection-end-line="551" selection-end-column="18" />
+        <entry file="file://$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -136,6 +140,7 @@
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/less/hux-blog.less" />
+        <option value="$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown" />
       </list>
     </option>
   </component>
@@ -183,13 +188,7 @@
             <path>
               <item name="allenwhm.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="allenwhm.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="allenwhm.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="allenwhm.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="allen-wang.css" type="620a8d5e:NestingTreeNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,7 +199,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552710431265" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552710473666" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -250,7 +249,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552704377178</updated>
-      <workItem from="1552704378375" duration="5719000" />
+      <workItem from="1552704378375" duration="6015000" />
     </task>
     <task id="LOCAL-00001" summary="fix lib vulnerabilities">
       <created>1552704841676</created>
@@ -322,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552710102863</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update class 'post-content-preview' change font style">
+      <created>1552710458780</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1552710458780</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5719000" />
+    <option name="totallyTimeSpent" value="6015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,7 +396,8 @@
     <MESSAGE value="update home image" />
     <MESSAGE value="update image files" />
     <MESSAGE value="update name" />
-    <option name="LAST_COMMIT_MESSAGE" value="update name" />
+    <MESSAGE value="update class 'post-content-preview' change font style" />
+    <option name="LAST_COMMIT_MESSAGE" value="update class 'post-content-preview' change font style" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/npm.txt">
@@ -531,6 +538,13 @@
     <entry file="file://$PROJECT_DIR$/css/allen-wang.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/less/hux-blog.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="551" column="18" lean-forward="true" selection-start-line="551" selection-start-column="18" selection-end-line="551" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/allen-wang.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -538,10 +552,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/hux-blog.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="551" column="18" lean-forward="true" selection-start-line="551" selection-start-column="18" selection-end-line="551" selection-end-column="18" />
+    <entry file="file://$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
