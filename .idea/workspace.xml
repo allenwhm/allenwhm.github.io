@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08621d47-df91-4816-8afc-fdcf7e5b67b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +31,7 @@
           <entry key="js" value="4" />
           <entry key="json" value="5" />
           <entry key="less" value="1" />
-          <entry key="markdown" value="2" />
+          <entry key="markdown" value="4" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
           <entry key="txt" value="2" />
@@ -45,7 +46,7 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="4" />
           <entry key="Less" value="1" />
-          <entry key="Markdown" value="3" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="3" />
         </counts>
@@ -56,9 +57,9 @@
           <entry key="html" value="119" />
           <entry key="js" value="35" />
           <entry key="json" value="93" />
-          <entry key="markdown" value="2" />
+          <entry key="markdown" value="6" />
           <entry key="md" value="195" />
-          <entry key="txt" value="640" />
+          <entry key="txt" value="659" />
           <entry key="yml" value="28" />
         </counts>
       </usages-collector>
@@ -68,8 +69,8 @@
           <entry key="HTML" value="119" />
           <entry key="JSON" value="93" />
           <entry key="JavaScript" value="35" />
-          <entry key="Markdown" value="197" />
-          <entry key="PLAIN_TEXT" value="640" />
+          <entry key="Markdown" value="201" />
+          <entry key="PLAIN_TEXT" value="659" />
           <entry key="YAML" value="28" />
         </counts>
       </usages-collector>
@@ -80,9 +81,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="46">
-                <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="69">
+                <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -90,10 +91,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -141,6 +156,8 @@
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/less/hux-blog.less" />
         <option value="$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown" />
       </list>
     </option>
   </component>
@@ -199,7 +216,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552710473666" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552710854973" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -249,7 +266,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552704377178</updated>
-      <workItem from="1552704378375" duration="6015000" />
+      <workItem from="1552704378375" duration="6142000" />
     </task>
     <task id="LOCAL-00001" summary="fix lib vulnerabilities">
       <created>1552704841676</created>
@@ -328,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552710458780</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="delete subtitle">
+      <created>1552710743284</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1552710743284</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6015000" />
+    <option name="totallyTimeSpent" value="6142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,7 +421,8 @@
     <MESSAGE value="update image files" />
     <MESSAGE value="update name" />
     <MESSAGE value="update class 'post-content-preview' change font style" />
-    <option name="LAST_COMMIT_MESSAGE" value="update class 'post-content-preview' change font style" />
+    <MESSAGE value="delete subtitle" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete subtitle" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/npm.txt">
@@ -552,20 +577,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="46">
-            <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="69">
+            <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
