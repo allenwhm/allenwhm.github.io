@@ -1,0 +1,5 @@
+npm audit, show the vulnerabilities in details
+
+npm audit fix, fix the vulnerabilities
+
+npm audit fix --force, fix the vulnerabilities in force mode
