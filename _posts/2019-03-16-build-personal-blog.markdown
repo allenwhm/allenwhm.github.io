@@ -1,59 +1,60 @@
 ---
 layout:       post
-title:        "30·ÖÖÓ£¬´î½¨ÄãµÄ¸öÈËÍøÕ¾ | github.io"
+title:        "30åˆ†é’Ÿï¼Œæ­å»ºä½ çš„ä¸ªäººç½‘ç«™ | github.io"
 date:         2019-03-16
 author:       "Allen"
 header-img:   "img/in-post/build-personal-blog/build-personal-blog.jpg"
-header-mask:  0.7
+header-mask:  0.9
 catalog:      false
 multilingual: false
 tags:
-    - Blog GitHub
+    - Blog
+    - GitHub
 ---
 
-²»¹Ü¶®²»¶®ÍøÒ³¼¼Êõ£¬´î½¨Ò»¸öÊôÓÚ×Ô¼ºµÄ¸öÈËÍøÕ¾×ÜÊÇ»ú¾ßÓÕ»óÁ¦µÄ¡£
+ä¸ç®¡æ‡‚ä¸æ‡‚ç½‘é¡µæŠ€æœ¯ï¼Œæ­å»ºä¸€ä¸ªå±äºè‡ªå·±çš„ä¸ªäººç½‘ç«™æ€»æ˜¯æœºå…·è¯±æƒ‘åŠ›çš„ã€‚
 
-ÕâÊÇÒ»¸öÍêÈ«ÓÉÄã×Ô¼ºÕÆ¿ØµÄµØ·½£¬ÔÚÕâÀï£¬ÄãÊÇÄã×Ô¼ºµÄ¹úÍõ/Íõºó¡£
+è¿™æ˜¯ä¸€ä¸ªå®Œå…¨ç”±ä½ è‡ªå·±æŒæ§çš„åœ°æ–¹ï¼Œåœ¨è¿™é‡Œï¼Œä½ æ˜¯ä½ è‡ªå·±çš„å›½ç‹/ç‹åã€‚
 
-Ò²ĞíÕâÊÂÒÔÇ°×öÆğÀ´»¹ÓĞĞ©Âé·³£¬µ«ÊÇÏÖÔÚÈ´Ê®·Ö¼òµ¥£¬Áã»ù´¡£¬ÁãÍ¶Èë£¬¼´¿ÌÓµÓĞ£¡
+ä¹Ÿè®¸è¿™äº‹ä»¥å‰åšèµ·æ¥è¿˜æœ‰äº›éº»çƒ¦ï¼Œä½†æ˜¯ç°åœ¨å´ååˆ†ç®€å•ï¼Œé›¶åŸºç¡€ï¼Œé›¶æŠ•å…¥ï¼Œå³åˆ»æ‹¥æœ‰ï¼
 
-ÎªÁËÈÃÄãÓĞÒ»¸öÖ±¹ÛµÄ¸ĞÊÜ£¬¿ÉÒÔÏÈ¿´ÎÒ¿ìËÙ´´½¨µÄÖ÷Ò³ https://allenwhm.github.io
+ä¸ºäº†è®©ä½ æœ‰ä¸€ä¸ªç›´è§‚çš„æ„Ÿå—ï¼Œå¯ä»¥å…ˆçœ‹æˆ‘å¿«é€Ÿåˆ›å»ºçš„ä¸»é¡µ https://allenwhm.github.io
 
-´î½¨¸öÈËÍøÕ¾µÄ·½Ê½ÓĞºÜ¶àÖÖ£¬×î½ü·¢ÏÖ×î¼òµ¥¿ì½İµÄÊÇÓÃgithub.io https://pages.github.com/ 
+æ­å»ºä¸ªäººç½‘ç«™çš„æ–¹å¼æœ‰å¾ˆå¤šç§ï¼Œæœ€è¿‘å‘ç°æœ€ç®€å•å¿«æ·çš„æ˜¯ç”¨github.io https://pages.github.com/ 
 
-¸ù¾İ https://pages.github.com/ µÄÌáÊ¾£¬Ò»²½Ò»²½×öÏÂÀ´£¬ºÜ¿ì¾Í¿ÉÒÔ´î½¨Ò»¸ö»ù±¾µÄÍøÕ¾¡£ÏÂÃæËù×öÑİÊ¾£¬Ò²»ù±¾°´ÕÕÕâÑùµÄÁ÷³Ì£¬Ö»ÊÇ²¹³äÒ»Ğ©ÄÚÈİ£¬´î½¨Ò»¸ö¸ü¼ÓÃÀ¹ÛµÄÍøÕ¾¡£
+æ ¹æ® https://pages.github.com/ çš„æç¤ºï¼Œä¸€æ­¥ä¸€æ­¥åšä¸‹æ¥ï¼Œå¾ˆå¿«å°±å¯ä»¥æ­å»ºä¸€ä¸ªåŸºæœ¬çš„ç½‘ç«™ã€‚ä¸‹é¢æ‰€åšæ¼”ç¤ºï¼Œä¹ŸåŸºæœ¬æŒ‰ç…§è¿™æ ·çš„æµç¨‹ï¼Œåªæ˜¯è¡¥å……ä¸€äº›å†…å®¹ï¼Œæ­å»ºä¸€ä¸ªæ›´åŠ ç¾è§‚çš„ç½‘ç«™ã€‚
 
-»°²»¶àËµ£¬Á¢ÂíĞĞ¶¯¡£Can't wait to start!
+è¯ä¸å¤šè¯´ï¼Œç«‹é©¬è¡ŒåŠ¨ã€‚Can't wait to start!
 
-1.×¢²áGitHubÕË»§
+1.æ³¨å†ŒGitHubè´¦æˆ·
 https://github.com/join
 
 ![register](http://img.blog.csdn.net/20170812211800107?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-ÆğÒ»¸öÄãÏ²»¶µÄÃû×Ö£¬Í¬Ê±Ò²ÊÇÄãµÄÓòÃûµØÖ·µÄÒ»²¿·Ö£¬Ö§³Ö×ÖÄ¸ºÍ¼õºÅ¡£´´½¨³É¹¦ºó£¬µÇÂ½ÓÊÏäÑéÖ¤ÕË»§¡£
+èµ·ä¸€ä¸ªä½ å–œæ¬¢çš„åå­—ï¼ŒåŒæ—¶ä¹Ÿæ˜¯ä½ çš„åŸŸååœ°å€çš„ä¸€éƒ¨åˆ†ï¼Œæ”¯æŒå­—æ¯å’Œå‡å·ã€‚åˆ›å»ºæˆåŠŸåï¼Œç™»é™†é‚®ç®±éªŒè¯è´¦æˆ·ã€‚
 
-2 . ´´½¨Ò»¸ö´úÂë²Ö¿â
+2 . åˆ›å»ºä¸€ä¸ªä»£ç ä»“åº“
 https://github.com/new
 
 ![create repository](http://img.blog.csdn.net/20170812212039453?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-×¢Òâ£¬±êÊ¶²¿·Ö±ØĞëºÍÄãµÄÓÃ»§Ãû±£³ÖÒ»ÖÂ¡£¼ÙÉèÄãµÄÓÃ»§ÃûÊÇ greatday, ÄÇÃ´´úÂë²Ö¿âÃû×ÖÎªgreatday.github.io£¬Ò²¼´Ö÷Ò³ÓòÃû¡£
+æ³¨æ„ï¼Œæ ‡è¯†éƒ¨åˆ†å¿…é¡»å’Œä½ çš„ç”¨æˆ·åä¿æŒä¸€è‡´ã€‚å‡è®¾ä½ çš„ç”¨æˆ·åæ˜¯ greatday, é‚£ä¹ˆä»£ç ä»“åº“åå­—ä¸ºgreatday.github.ioï¼Œä¹Ÿå³ä¸»é¡µåŸŸåã€‚
 
-3.ÏÂÔØ´úÂë±à¼­Æ÷ & Git 
-IntelliJ IDEA »¹ÊÇ Eclipse, ÄãÏ²»¶¾ÍºÃ¡£
-IntelliJ IDEA £º https://www.jetbrains.com/idea/download     
-Eclipse £º https://www.eclipse.org/downloads/         
-ÏÂÔØÖ®ºó°´ÕÕÒªÇóÒ»²½²½°²×°¡£
+3.ä¸‹è½½ä»£ç ç¼–è¾‘å™¨ & Git 
+IntelliJ IDEA è¿˜æ˜¯ Eclipse, ä½ å–œæ¬¢å°±å¥½ã€‚
+IntelliJ IDEA ï¼š https://www.jetbrains.com/idea/download     
+Eclipse ï¼š https://www.eclipse.org/downloads/         
+ä¸‹è½½ä¹‹åæŒ‰ç…§è¦æ±‚ä¸€æ­¥æ­¥å®‰è£…ã€‚
 
-ÊÇµÄ£¬Èç¹ûÓÃIDEAµÄ»°Äã»¹ĞèÒªÒ»¸öGit¡£
+æ˜¯çš„ï¼Œå¦‚æœç”¨IDEAçš„è¯ä½ è¿˜éœ€è¦ä¸€ä¸ªGitã€‚
 https://git-for-windows.github.io/
 
-4.´Ó·şÎñÆ÷ÉÏÀ­È¡´úÂë
-ËùÒÔ£¬·½±ãÆğ¼û£¬ÒÔEclipseÎªÀı£¬Ä¬ÈÏÄãÒÑ¾­°ÑÉÏÊöÈí¼ş°²×°ºÃ²¢´ò¿ªÁË¡£
+4.ä»æœåŠ¡å™¨ä¸Šæ‹‰å–ä»£ç 
+æ‰€ä»¥ï¼Œæ–¹ä¾¿èµ·è§ï¼Œä»¥Eclipseä¸ºä¾‹ï¼Œé»˜è®¤ä½ å·²ç»æŠŠä¸Šè¿°è½¯ä»¶å®‰è£…å¥½å¹¶æ‰“å¼€äº†ã€‚
 
 ![import](http://img.blog.csdn.net/20170812212103119?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-Í¼1ÇøÓòÄÚÓÒ¼ü£¬Ñ¡Ôñµ¼Èëimport.
+å›¾1åŒºåŸŸå†…å³é”®ï¼Œé€‰æ‹©å¯¼å…¥import.
 
 ![project from git](http://img.blog.csdn.net/20170812212122829?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -61,63 +62,63 @@ Project from Git
 
 ![clone](http://img.blog.csdn.net/20170812212135077?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-ÈçÍ¼²Ù×÷
+å¦‚å›¾æ“ä½œ
 
 ![clone](http://img.blog.csdn.net/20170812212230947?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ![clone](http://img.blog.csdn.net/20170812212250178?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-¸´ÖÆÄãµÄ²Ö¿âµØÖ· https://github.com/allenwhm/allenwhm.github.io.git£¬»òÕß°ÑÓÃ»§ÃûÌæ»»ÎªÄã×Ô¼ºµÄ¼´¿É¡£
+å¤åˆ¶ä½ çš„ä»“åº“åœ°å€ https://github.com/allenwhm/allenwhm.github.io.gitï¼Œæˆ–è€…æŠŠç”¨æˆ·åæ›¿æ¢ä¸ºä½ è‡ªå·±çš„å³å¯ã€‚
 
 ![clone](http://img.blog.csdn.net/20170812212304942?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-È»ºóÒ»Â·Next£¬´´½¨ºÃÄãµÄÏîÄ¿¡£
+ç„¶åä¸€è·¯Nextï¼Œåˆ›å»ºå¥½ä½ çš„é¡¹ç›®ã€‚
 
-5.±àĞ´´úÂë£¬»òÕß½èÓÃÈËÀàÖÇ»ÛµÄ½á¾§
-´ÓÀ´½ÌºÃ²»½Ì»µ£¬ËùÒÔÕâ¸ö×ÔĞĞ°Ù¶È <ÍøÒ³Ä£°å> Ëæ±ãÕÒµÚÒ»¸öÍøÕ¾Ëæ±ãÏÂÔØÒ»¸öÈ»ºó½âÑ¹£¬Ó¦¸Ã¾ÍÏñÏÂÃæÕâÑù¡£
+5.ç¼–å†™ä»£ç ï¼Œæˆ–è€…å€Ÿç”¨äººç±»æ™ºæ…§çš„ç»“æ™¶
+ä»æ¥æ•™å¥½ä¸æ•™åï¼Œæ‰€ä»¥è¿™ä¸ªè‡ªè¡Œç™¾åº¦ <ç½‘é¡µæ¨¡æ¿> éšä¾¿æ‰¾ç¬¬ä¸€ä¸ªç½‘ç«™éšä¾¿ä¸‹è½½ä¸€ä¸ªç„¶åè§£å‹ï¼Œåº”è¯¥å°±åƒä¸‹é¢è¿™æ ·ã€‚
 
 ![project](http://img.blog.csdn.net/20170812212408562?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-È»ºó¸´ÖÆµ½ÄãµÄÏîÄ¿Ä¿Â¼ÏÂ¡£àÅ£¬1ÃëÖÓĞ´ÍêÒ»¸ö¾«ÃÀÍøÕ¾¡£
+ç„¶åå¤åˆ¶åˆ°ä½ çš„é¡¹ç›®ç›®å½•ä¸‹ã€‚å—¯ï¼Œ1ç§’é’Ÿå†™å®Œä¸€ä¸ªç²¾ç¾ç½‘ç«™ã€‚
 
 ![copy to ide](http://img.blog.csdn.net/20170812212422111?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-ĞŞ¸ÄÎÄ¼şÄÚÈİ£¬³ÉÎªÄãµÄÍøÕ¾¡£
+ä¿®æ”¹æ–‡ä»¶å†…å®¹ï¼Œæˆä¸ºä½ çš„ç½‘ç«™ã€‚
 
 ![edit](http://img.blog.csdn.net/20170812212458807?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-×î¼òµ¥µÄ·½·¨¾ÍÊÇÕÒÄã¿´µÄ¶®µÄµØ·½£¬È»ºóĞŞ¸Ä¡£
+æœ€ç®€å•çš„æ–¹æ³•å°±æ˜¯æ‰¾ä½ çœ‹çš„æ‡‚çš„åœ°æ–¹ï¼Œç„¶åä¿®æ”¹ã€‚
 
-»¹ÊÇ½¨ÒéÄãÑ§Ï°Ò»µã html, cssµÄ»ù´¡ÖªÊ¶£¬±ğµ£ĞÄ£¬ ºÜ¼òµ¥µÄ¡£http://www.runoob.com/html/html-basic.html 
+è¿˜æ˜¯å»ºè®®ä½ å­¦ä¹ ä¸€ç‚¹ html, cssçš„åŸºç¡€çŸ¥è¯†ï¼Œåˆ«æ‹…å¿ƒï¼Œ å¾ˆç®€å•çš„ã€‚http://www.runoob.com/html/html-basic.html 
 
-6.ÉÏ´«´úÂë
+6.ä¸Šä¼ ä»£ç 
 
 ![commit](http://img.blog.csdn.net/20170812212528920?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-Ëæ±ãĞ´µãcommit message£¬ È»ºócommit and push¡£Ò³ÃæÒòEclipse°æ±¾¶øÒì¡£
+éšä¾¿å†™ç‚¹commit messageï¼Œ ç„¶åcommit and pushã€‚é¡µé¢å› Eclipseç‰ˆæœ¬è€Œå¼‚ã€‚
 
 ![commit message](http://img.blog.csdn.net/20170812212550892?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-7.¼ûÖ¤Ææ¼£µÄÊ±¿Ì
+7.è§è¯å¥‡è¿¹çš„æ—¶åˆ»
 
 ![final](http://img.blog.csdn.net/20170812212617164?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-Ò»°ãÔÚ´úÂëÉÏ´«Íê±ÏÖ®ºó£¬ÍøÕ¾×Ô¶¯²¿ÊğÍê±Ï£¬´ò¿ª https://allenwhm.github.io£¬ ÓÃ»§ÃûÌæ»»ÎªÄã×Ô¼ºµÄÓÃ»§Ãû¼´¿É¡£Èç¹ûÔİÊ±404, ÉÔµÈÆ¬¿Ì¡£Èç¹ûÒ»Ö±404, ÉÙÄê¹ıÀ´£¬ÎÒÀ´½ÌÄã£¨ÈÏÕæÁ³£©¡£
+ä¸€èˆ¬åœ¨ä»£ç ä¸Šä¼ å®Œæ¯•ä¹‹åï¼Œç½‘ç«™è‡ªåŠ¨éƒ¨ç½²å®Œæ¯•ï¼Œæ‰“å¼€ https://allenwhm.github.ioï¼Œ ç”¨æˆ·åæ›¿æ¢ä¸ºä½ è‡ªå·±çš„ç”¨æˆ·åå³å¯ã€‚å¦‚æœæš‚æ—¶404, ç¨ç­‰ç‰‡åˆ»ã€‚å¦‚æœä¸€ç›´404, å°‘å¹´è¿‡æ¥ï¼Œæˆ‘æ¥æ•™ä½ ï¼ˆè®¤çœŸè„¸ï¼‰ã€‚
 
-¼òµ¥µÄ¼¸¸ö²½Öè£¬¾Í¿ÉÒÔÓµÓĞÊôÓÚÄã×Ô¼ºµÄÍøÕ¾£¬»¹²»À´ÊÔÊÔ£¿
+ç®€å•çš„å‡ ä¸ªæ­¥éª¤ï¼Œå°±å¯ä»¥æ‹¥æœ‰å±äºä½ è‡ªå·±çš„ç½‘ç«™ï¼Œè¿˜ä¸æ¥è¯•è¯•ï¼Ÿ
 
-ÈÎºÎÎÊÌâ£¬»¶Ó­ËæÊ±Ë½ĞÅ£¬ÓĞÎÊ±Ø´ğ£¬ÕæµÄ£¡
+ä»»ä½•é—®é¢˜ï¼Œæ¬¢è¿éšæ—¶ç§ä¿¡ï¼Œæœ‰é—®å¿…ç­”ï¼ŒçœŸçš„ï¼
 
 **Plus**
 
-1.³ıÁË´î½¨¸öÈËÖ÷Ò³£¬ÓÃÀ´´î½¨ÏîÄ¿Ö÷Ò³Ò²ÊÇ²»´íµÄÑ¡Ôñ
+1.é™¤äº†æ­å»ºä¸ªäººä¸»é¡µï¼Œç”¨æ¥æ­å»ºé¡¹ç›®ä¸»é¡µä¹Ÿæ˜¯ä¸é”™çš„é€‰æ‹©
 
 http://alibaba.github.io/
 
 ![alibaba](http://img.blog.csdn.net/20170812212641630?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-2.ÔÚ´î½¨ÍøÕ¾µÄÊ±ºò½¨ÒéÑ¹ËõÍ¼Æ¬´óĞ¡£¬½¨Òéµ¥ÕÅ¿ØÖÆÔÚ100kÒÔÄÚ£¬ÄÜ´ó·ùÌáÉıÍøÕ¾µÄĞÔÄÜºÍ·ÃÎÊËÙ¶È¡£±ğÎÊÎÒÔõÃ´Ñ¹ËõÍ¼Æ¬£¬ÃÀÍ¼ĞãĞãÄãÖµµÃÓµÓĞ¡£
+2.åœ¨æ­å»ºç½‘ç«™çš„æ—¶å€™å»ºè®®å‹ç¼©å›¾ç‰‡å¤§å°ï¼Œå»ºè®®å•å¼ æ§åˆ¶åœ¨100kä»¥å†…ï¼Œèƒ½å¤§å¹…æå‡ç½‘ç«™çš„æ€§èƒ½å’Œè®¿é—®é€Ÿåº¦ã€‚åˆ«é—®æˆ‘æ€ä¹ˆå‹ç¼©å›¾ç‰‡ï¼Œç¾å›¾ç§€ç§€ä½ å€¼å¾—æ‹¥æœ‰ã€‚
 
-ÎÄÕÂÊ×·¢ÓÚ¸öÈË¹«ÖÚºÅ £º Ã÷Ëµ £¨dataintelligience£©£¬»¶Ó­¹Ø×¢ÌÖÂÛ¡£
+æ–‡ç« é¦–å‘äºä¸ªäººå…¬ä¼—å· ï¼š æ˜è¯´ ï¼ˆdataintelligienceï¼‰ï¼Œæ¬¢è¿å…³æ³¨è®¨è®ºã€‚
 
-![Ã÷Ëµ](http://img.blog.csdn.net/20170812104118765?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![æ˜è¯´](http://img.blog.csdn.net/20170812104118765?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTWVldF9N/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
