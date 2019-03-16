@@ -21,7 +21,7 @@ const PRECACHE_LIST = [
   "./js/snackbar.js",
   // "./img/icon_wechat.png",
   "./img/avatar.jpg",
-  "./img/home-2.jpg",
+  "./img/home.jpg",
   "./img/404-bg.jpg",
   "./css/hux-blog.min.css",
   "./css/syntax.css",
