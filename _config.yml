@@ -1,6 +1,6 @@
 # Site settings
-title: allenwhm1
-SEOTitle: allenwhm2
+title: allen.wang
+SEOTitle: allen.wang
 header-img: img/home.jpg
 email: wanghmjlu@163.com
 description: "Allen WANG | Big Data Developer"
@@ -15,7 +15,7 @@ zhihu_username:     allenwhm
 github_username:    allenwhm
 linkedin_username:  allen-wang-王火明-85650ba9
 #twitter_username:   allewhm
-#facebook_username:  huxpro
+#facebook_username:  allewhm
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
