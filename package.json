@@ -1,14 +1,14 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
-    "version": "1.7.0",
-    "homepage": "http://huxpro.github.io",
+    "name": "allen.wang",
+    "title": "allen.wang",
+    "author": "allen.wang",
+    "version": "1.0.0",
+    "homepage": "http://allenwhm.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://github.com/allenwhm/allenwhm.github.io"
     },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "bugs": "https://github.com/allenwhm/allenwhm.github.io/issues",
     "devDependencies": {
         "grunt": "^1.0.3",
         "grunt-banner": "~0.2.3",
