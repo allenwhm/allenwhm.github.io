@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08621d47-df91-4816-8afc-fdcf7e5b67b9" name="Default Changelist" comment="">
+    <list default="true" id="08621d47-df91-4816-8afc-fdcf7e5b67b9" name="Default Changelist" comment="delete subtitle">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +23,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="8" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="4" />
           <entry key="html" value="10" />
           <entry key="ico" value="5" />
           <entry key="jpg" value="9" />
@@ -47,13 +46,14 @@
           <entry key="JavaScript" value="4" />
           <entry key="Less" value="1" />
           <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
+          <entry key="gitignore" value="9" />
           <entry key="html" value="119" />
           <entry key="js" value="35" />
           <entry key="json" value="93" />
@@ -70,7 +70,7 @@
           <entry key="JSON" value="93" />
           <entry key="JavaScript" value="35" />
           <entry key="Markdown" value="201" />
-          <entry key="PLAIN_TEXT" value="659" />
+          <entry key="PLAIN_TEXT" value="668" />
           <entry key="YAML" value="28" />
         </counts>
       </usages-collector>
@@ -78,38 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="69">
-                <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="46">
-                <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="46">
-                <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -158,6 +131,7 @@
         <option value="$PROJECT_DIR$/_posts/2018-04-25-build-blog-based-on-jekull-theme.markdown" />
         <option value="$PROJECT_DIR$/_posts/2018-05-03-imporve-professional-competence.markdown" />
         <option value="$PROJECT_DIR$/_posts/2018-08-25-make-the-right-decision.markdown" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -202,11 +176,6 @@
               <item name="allenwhm.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="allenwhm.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="allenwhm.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="allenwhm.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -216,7 +185,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552710854973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552710910619" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -266,7 +235,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552704377178</updated>
-      <workItem from="1552704378375" duration="6142000" />
+      <workItem from="1552704378375" duration="6197000" />
     </task>
     <task id="LOCAL-00001" summary="fix lib vulnerabilities">
       <created>1552704841676</created>
@@ -352,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552710743284</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="delete subtitle">
+      <created>1552710870064</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1552710870064</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6142000" />
+    <option name="totallyTimeSpent" value="6197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,9 +426,6 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -604,6 +577,13 @@
             <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
