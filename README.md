@@ -1,3 +1,3 @@
-##TODO
+## Blog of Allen
 
-add the readme page
+Blog to record what I have seen and learned.
