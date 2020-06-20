@@ -1,6 +1,6 @@
-## Blog of Allen
+## Allen's Blog
 
-Blog to record what I have seen and learned.
+To write something on what I see and think about.
 
 ### fix vulnerabilities
 ```shell script
