@@ -3,8 +3,7 @@ layout:       post
 title:        "30分钟，搭建你的个人网站 | github.io"
 date:         2019-03-16
 author:       "Allen"
-header-img:   "img/in-post/build-personal-blog/build-personal-blog.jpg"
-header-mask:  0.9
+header-mask:  0.3
 catalog:      false
 multilingual: false
 tags:

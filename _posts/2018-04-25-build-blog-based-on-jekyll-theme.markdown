@@ -3,8 +3,7 @@ layout:       post
 title:        "根据Jekyll模板创建个人博客"
 date:         2018-04-25
 author:       "Allen"
-header-img:   "img/in-post/build-blog-with-jekyll-theme/jekyll-theme.png"
-header-mask:  0.7
+header-mask:  0.3
 catalog:      false
 multilingual: false
 tags:

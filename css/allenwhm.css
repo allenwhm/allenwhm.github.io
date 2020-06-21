@@ -26,7 +26,7 @@
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
-  color: #0085a1 !important;
+  color: #0085a1     !important;
 }
 .sidebar-container .tags a {
   border-color: #bfbfbf;

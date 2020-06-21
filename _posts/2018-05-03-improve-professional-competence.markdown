@@ -3,8 +3,7 @@ layout:       post
 title:        "坚持不懈，提升专业能力"
 date:         2018-05-03
 author:       "Allen"
-header-img:   "img/in-post/improve-professional-competence/professional-competence.jpg"
-header-mask:  0.7
+header-mask:  0.3
 catalog:      false
 multilingual: false
 tags:
