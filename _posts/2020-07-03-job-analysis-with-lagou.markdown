@@ -57,27 +57,28 @@ tags:
 - MongoDB
 - Jupyter Notebook
 
-在爬取拉勾网1500条 `大数据` 岗位的数 据之后，有了如下的一些发现。
-- Java / Hadoop / Spark / Hive是大数据岗位的核心技能
+在爬取拉勾网1500条 `大数据` 岗位的数据之后，有了如下的一些发现。
+
+- Java / Hadoop / Spark / Hive 是大数据岗位的核心技能  
 ![skill](/img/in-post/lagou_skill.png)
 
-- 工作地点主要集中在北上深杭广
+- 工作地点主要集中在*北上深杭广*  
 ![city](/img/in-post/lagou_city.png)
 
-- 学历要求本科的岗位最多
+- 学历要求本科的岗位最多  
 ![education](/img/in-post/lagou_education.png)
 
-- 3-5 年的中级开发和 5-10 年的高级开发最吃香
+- 3-5 年的中级开发和 5-10 年的高级开发最吃香  
 ![experience](/img/in-post/lagou_experience.png)
 
 - 月薪集中在 15K-40K 之间  
-由于薪资一般是一个区间，如果每个岗位薪资取最高和最低值的平均值的话：  
-![salary](/img/in-post/lagou_salary_average.png)
+    由于薪资一般是一个区间，如果每个岗位薪资取最高和最低值的平均值的话：  
+    ![salary](/img/in-post/lagou_salary_average.png)
 
-如果把薪资区间的每一个数值都计1个单位，所有岗位累加呈现的整体形式如下：
-![salary](/img/in-post/lagou_salary.png)
+    如果把薪资区间的每一个数值都计1个单位，所有岗位累加呈现的整体形式如下：  
+    ![salary](/img/in-post/lagou_salary.png)
 
-- 福利待遇
+- 福利待遇  
 ![benefit](/img/in-post/lagou_benefit.png)
 
 
