@@ -2,6 +2,9 @@
 
 To write something on what I see and think about.
 
+### Todo
+- blog comment 
+
 ### fix vulnerabilities
 ```shell script
 # show the vulnerabilities in details
