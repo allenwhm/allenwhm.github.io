@@ -45,12 +45,12 @@ if(navigator.serviceWorker){
     
     if(data.command == "UPDATE_FOUND"){
       console.log("UPDATE_FOUND_BY_SW", data);
-      location.reload();
-//      createSnackbar({
-//        message: "Content updated.",
-//        actionText:"refresh",
-//        action: function(e){location.reload()}
-//      })
+//      location.reload();
+      createSnackbar({
+        message: "Page updated.",
+        actionText:"Refresh",
+        action: function(e){location.reload()}
+      })
     }
   }
 }
