@@ -48,8 +48,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: ''            # Format: UA-xxxxxx-xx
-ga_domain: allenwang.tech
+ga_track_id: 'UA-171592168-1'            # Format: UA-xxxxxx-xx
+ga_domain: https://allenwhm.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
