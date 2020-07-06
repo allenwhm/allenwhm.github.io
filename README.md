@@ -2,8 +2,10 @@
 
 To write something on what I see and think about.
 
-### Todo
+### TODO
 - blog comment 
+- add portfolio
+    - fate app
 
 ### fix vulnerabilities
 ```shell script
