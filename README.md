@@ -8,7 +8,7 @@ To write something on what I see and think about.
     - fate app
 
 ### Finished  
--[X] add go to top
+- [X] add go to top
 
 ### fix vulnerabilities
 ```shell script
