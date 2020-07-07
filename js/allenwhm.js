@@ -61,9 +61,11 @@ jQuery(document).ready(function($) {
                         $('.navbar-custom').addClass('is-visible');
                     } else {
                         $('.navbar-custom').removeClass('is-visible is-fixed');
+                        document.getElementById('page-top-btn').style.visibility = 'hidden';
                     }
                 } else {
                     //if scrolling down...
+                    document.getElementById('page-top-btn').style.visibility = 'visible';
                     $('.navbar-custom').removeClass('is-visible');
                     if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed');
                 }

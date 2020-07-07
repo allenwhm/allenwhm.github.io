@@ -7,6 +7,9 @@ To write something on what I see and think about.
 - add portfolio
     - fate app
 
+### Finished  
+-[X] add go to top
+
 ### fix vulnerabilities
 ```shell script
 # show the vulnerabilities in details
