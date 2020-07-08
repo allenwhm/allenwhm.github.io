@@ -7,6 +7,7 @@ To write something on what I see and think about.
 - add portfolio
     - fate app
 - internationalise, support CN/EN
+- unreasonable page content update
 
 ### Finished  
 - [X] add go to top
