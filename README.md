@@ -6,6 +6,7 @@ To write something on what I see and think about.
 - blog comment 
 - add portfolio
     - fate app
+- internationalise, support CN/EN
 
 ### Finished  
 - [X] add go to top
