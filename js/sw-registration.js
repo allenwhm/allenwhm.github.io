@@ -47,7 +47,7 @@ if(navigator.serviceWorker){
       console.log("UPDATE_FOUND_BY_SW", data);
 //      location.reload();
       createSnackbar({
-        message: "Page updated.",
+        message: "Page Updated",
         actionText:"Refresh",
         action: function(e){location.reload()}
       })
